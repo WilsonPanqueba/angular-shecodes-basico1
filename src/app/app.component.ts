@@ -13,13 +13,15 @@ export class AppComponent  {
     if(this.party === 'Party'){
       this.urlImage = 'https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg';
     }
-  }
+  }s
 
       handleClick() {
       if(this.party === "Party"){
         this.party = "";
+        this.urlImage = 'https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg';
       }else{
         this.party = "Party";
+        this.urlImage = 'https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg';
       }
     }
 }
